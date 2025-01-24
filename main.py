@@ -14,7 +14,7 @@ def filegenerator(decklist):
     contents += '],"CustomDeck":{'
 
     for i in range(counter):
-        if decklist[i][-3:] in eggs and decklist[i] not in eggceptions:
+        if decklist[i][-3:] in eggs and decklist[i] not in eggceptions: #checks for digitamas
             cardBack = "https://file.garden/ZUWEKmrAFHgJ5X5e/DigimonBackEgg.jpg"
         elif decklist[i] in eggstras:
             cardBack = "https://file.garden/ZUWEKmrAFHgJ5X5e/DigimonBackEgg.jpg"
